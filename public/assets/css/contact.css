@@ -1,0 +1,97 @@
+
+.icon.icon-primary {
+    color: #76923c;
+}
+.foo{
+    border:none;
+}
+.badge.badge-danger{
+    background-color:#76923c ;
+    padding-bottom: 1%;
+}
+.invalid-feedback{
+    color:#9c27b0 ;
+}
+.form-group bmd-form-group is-filled{
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+<!-------------header--------------------------------------------------------------------------->
+.page-header{
+    height: 1vh;
+    }
+
+
+.page-header.header-small{
+    min-height: 0vh;
+    height: 1vh;
+
+}
+.erreur{
+    background-image: url('/img/MTO.jpg');
+
+}
+<!-----------------------------ck-editor--------------------------------------------------------->
+
+#cke_descriptions_contenu{
+    border: none;
+
+}
+<!-----------------------------Body--------------------------------------------------------->
+   body{
+padding-top: 5% !important;
+}
+* {
+    outline: none;
+}
+.sites-list{
+    /*animation-name: animation-width;*/
+
+    animation-name: animation-width;
+
+    animation-duration: 5s;
+    /* animation-delay: 2s;*/
+    animation-iteration-count: 1;
+    /*animation-play-state: paused;*/
+    animation-fill-mode:forwards; /*laisser l'élément dans sont état final*/
+
+}
+/* The animation code */
+@keyframes animation-width2 {
+    0%   {width:0%; }
+    /* 25%  {width:25%;}
+     50%  {width:50%;}*/
+    75%  {width:75%;}
+}
+
+
+@keyframes animation-width {
+    from {
+
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+
+    }
+}
+
+@keyframes animation-display {
+    from {
+        height:0;
+        width:0;
+        opacity:0;
+    }
+    70% {
+        height:0;
+        width:0;
+        opacity:0;
+    }
+    to {
+        opacity:1;
+        width:auto;
+        height:auto;
+    }
+}

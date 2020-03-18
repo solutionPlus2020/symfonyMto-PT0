@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+    <div >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85433.73818619532!2d2.670565001972994!3d47.99816871250773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef809caaf7ef95%3A0x110a4705b082ce9b!2sSolution%20Plus!5e0!3m2!1sfr!2stn!4v1583662042168!5m2!1sfr!2stn"
+                width="100%"
+                height="450"
+                frameborder="0"
+                style="border:0;" allowfullscreen="">
+
+        </iframe>
+
+    </div>
+    <div class="main main-raised">
+        <div class="contact-content">
+            <div class="container">
+                <h2 class="title">Envoyer nous un message</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="description">
+                            Vous pouvez nous contacter pour tout ce qui concerne nos produits. Nous vous contacterons dans les plus brefs délais.<br><br>
+                        </p>
+                        {{ form_start(form, { attr: { novalidate: 'novalidate' } }) }}
+
+                        <div class="form-group">
+                            {{ form_label(form.username, 'Votre Nom') }}
+                            {{ form_widget(form.username, { 'attr': {'class': 'foo'} }) }}
+                        </div>
+                        <div class="form-group">
+                            <div class="errFlex">{{ form_label(form.email, 'Votre Adresse Email') }}</div>
+                            {{ form_widget(form.email, { 'attr': {'class': 'foo'} }) }}
+                            <small>Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre</small>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="errFlex"> {{ form_label(form.tel, 'Votre Numéro De Télèphone') }}</div>
+                            {{ form_widget(form.tel, { 'attr': {'class': 'foo'} }) }}
+                            <small>Nous ne partagerons jamais votre numéro avec quelqu'un d'autre</small>
+
+                        </div>
+                        <div class="form-group label-floating">
+                            {{ form_label(form.message, 'Votre Message') }}
+                            {{ form_widget(form.message, { 'attr': {'class': 'foo'} }) }}
+                        </div>
+                        <div class="submit text-center">
+                            <button class="btn btn-primary btn-raised btn-round"> {{ button|default('Contactez-nous') }} &nbsp; <i class="fa fa-share"></i> </button>
+
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="material-icons">pin_drop</i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                    Retrouvez-nous au bureau</h4>
+                                <p> 21 Rue du Faubourg de la Chaussée,<br>
+                                    45200 Montargis,<br>
+                                    France
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="material-icons">phone</i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">appeler</h4>
+                                <p> Ali SolutionPlus<br>
+                                    <a href="tel:+33238986677">+33 2 38 98 66 77</a>
+                                    <br>
+                                    <a href="fax:+33238986677">FAX</a>
+                                    +33 2 38 98 66 77
+                                    <a href="mailto:solutionPlus2020@gmail.com">solutionPlus2020@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="material-icons">business_center</i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Legal Information</h4>
+                                <p>MTO-PTO Travels<br>
+                                    SIRET (siege)  &#xB7; 43876323700023 <br>
+                                    SIREN  &#xB7;  438 763 237 <br>
+                                    Bank &#xB7; Great Britain Bank
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
