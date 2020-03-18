@@ -1,6 +1,6 @@
 doctrine:
     dbal:
-        driver: 'pdo_sqlsrv'
+        driver: 'pdo_mysql'
         default_table_options:
             charset: utf8
             collate: utf8_unicode_ci
