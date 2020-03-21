@@ -61,7 +61,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255,nullable=true)
      */
-    private $roles;
+    private $roles=[];
     public function addRole($role){
         $roles=$this->getRoles();
         $roles[]=$role;
@@ -135,7 +135,7 @@ class User implements UserInterface
 
     public function getRoles()
     {
-        return $this->roles=[];
+        return $this->roles;
     }
 
     public function setRoles( $roles)

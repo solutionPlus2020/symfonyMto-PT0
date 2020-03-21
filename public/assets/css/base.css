@@ -1,3 +1,11 @@
+.zoom{
+    -webkit-transform-origin: center center !important;
+    -webkit-transform: scale(5) rotate(45deg)!important;
+    /*-webkit-transition-duration: 1s!important;*/
+}
+.zoom:hover {
+
+}
 .item-title:hover .menuNone {
     display: block !important;
 
